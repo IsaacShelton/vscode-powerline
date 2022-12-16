@@ -28,12 +28,12 @@ function updateStatusBarItem() {
 	}
 
 	const cursorPos = editor.selection.start;
-	const line = "" + (cursorPos.line + 1) + "/" + (editor.document.lineCount) + " ";
-	const column = "" + (cursorPos.character + 1) + " ";
+	const line = "" + (cursorPos.line + 1) + "/" + (editor.document.lineCount) + " $(symbol-number)";
+	const column = "" + (cursorPos.character + 1) + " $(italic)";
 
 	const visibleRange = editor.visibleRanges[0];
 	const visibleLine = clamp(cursorPos.line, visibleRange.start.line, visibleRange.end.line);
-	const percent = "" + Math.round(visibleLine / editor.document.lineCount * 100.0) + "% ☰";
+	const percent = "" + Math.round(visibleLine / editor.document.lineCount * 100.0) + "% $(symbol-file)";
 
 	const label = percent + " " + line + " " + column;
 	positionStatusBarItem.text = label;

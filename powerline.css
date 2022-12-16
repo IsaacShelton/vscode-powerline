@@ -8,6 +8,22 @@
 
 /* airline default "dark" theme */
 body {
+    --powerline-mode-fg: #282c34;
+    --powerline-normal-bg: #98c379;
+    --powerline-insert-bg: #61afef;
+    --powerline-replace-bg: #e06c75;
+    --powerline-visual-bg: #e5c07b;
+    --powerline-inner-fg: #ABB2BF;
+    --powerline-inner-bg: #313640;
+    --powerline-inner-bg-hl: #3E4452;
+    --powerline-mode-weight: bold;
+    --powerline-second-segment-fg: #dcdfe4;
+    --powerline-second-segment-bg: rgba(0, 0, 0, 0.5);
+    --powerline-separator: rgba(0, 0, 0, 0.25);
+    --powerline-vim-command-line: #dcdfe4;
+}
+/*
+body {
     --powerline-mode-fg: #00005f;
     --powerline-normal-bg: #dfff00;
     --powerline-insert-bg: #00dfff;
@@ -22,6 +38,7 @@ body {
     --powerline-vim-command-line: #ffffff;
     --powerline-mode-weight: bold;
 }
+*/
 
 /* Nord */
 div.arcticicestudio-nord-visual-studio-code-themes-nord-color-theme-json footer.statusbar {
